@@ -1,0 +1,2151 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Upma",
+      "category": "Tiffin",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "semolina",
+        "onion",
+        "mustard seeds",
+        "curry leaves",
+        "green chili"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vermicelli Upma",
+      "category": "Tiffin",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "vermicelli",
+        "onion",
+        "mustard seeds",
+        "curry leaves",
+        "green chili"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Poha",
+      "category": "Tiffin",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "poha",
+        "onion",
+        "mustard seeds",
+        "curry leaves",
+        "lemon"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Idly",
+      "category": "Tiffin",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "idly batter",
+        "urad dal",
+        "rice"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin",
+        "steam"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Idly Pindi Attu",
+      "category": "Tiffin",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "idly batter",
+        "onion",
+        "green chili",
+        "curry leaves"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin",
+        "crepe"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Dosa",
+      "category": "Tiffin",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "dosa batter",
+        "rice",
+        "urad dal",
+        "oil"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Dosa with Aloo Masala",
+      "category": "Tiffin",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "dosa batter",
+        "potato",
+        "onion",
+        "mustard seeds",
+        "turmeric",
+        "curry leaves"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin",
+        "masala"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Pesarattu",
+      "category": "Tiffin",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "moong dal",
+        "green chili",
+        "ginger",
+        "onion"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin",
+        "crepe"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Poori",
+      "category": "Tiffin",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "wheat flour",
+        "oil",
+        "salt"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin",
+        "fried"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Vada (Gaare)",
+      "category": "Tiffin",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "urad dal",
+        "onion",
+        "green chili",
+        "curry leaves",
+        "oil"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin",
+        "fried"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Punugulu",
+      "category": "Tiffin",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "idly batter",
+        "onion",
+        "green chili",
+        "curry leaves",
+        "oil"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin",
+        "fried"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Vada",
+      "category": "Tiffin",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "urad dal",
+        "onion",
+        "green chili",
+        "curry leaves",
+        "oil"
+      ],
+      "tags": [
+        "breakfast",
+        "tiffin",
+        "fried"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Kandi Pappu (Chana Dal) Chutney",
+      "category": "Chutney",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "chana dal",
+        "coconut",
+        "green chili",
+        "tamarind",
+        "garlic"
+      ],
+      "tags": [
+        "chutney",
+        "side"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Peanut Chutney",
+      "category": "Chutney",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "peanut",
+        "green chili",
+        "tamarind",
+        "garlic"
+      ],
+      "tags": [
+        "chutney",
+        "side"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Coconut Chutney",
+      "category": "Chutney",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "coconut",
+        "green chili",
+        "tamarind",
+        "garlic"
+      ],
+      "tags": [
+        "chutney",
+        "side"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Chickpea Flour Chutney",
+      "category": "Chutney",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "chickpea flour",
+        "onion",
+        "green chili",
+        "tamarind"
+      ],
+      "tags": [
+        "chutney",
+        "side"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Toor Dal Chutney",
+      "category": "Chutney",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "toor dal",
+        "green chili",
+        "tamarind",
+        "garlic"
+      ],
+      "tags": [
+        "chutney",
+        "side"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Vadiyalu Curry",
+      "category": "Curry",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "vadiyalu",
+        "onion",
+        "tomato",
+        "oil",
+        "mustard seeds"
+      ],
+      "tags": [
+        "curry",
+        "rice"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Tomato Curry",
+      "category": "Curry",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "tomato",
+        "onion",
+        "mustard seeds",
+        "curry leaves"
+      ],
+      "tags": [
+        "curry",
+        "rice",
+        "easy"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Potato Fry",
+      "category": "Fry",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "potato",
+        "onion",
+        "mustard seeds",
+        "turmeric",
+        "red chili"
+      ],
+      "tags": [
+        "fry",
+        "easy"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Beerakaya Curry",
+      "category": "Curry",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "beerakaya",
+        "ridge gourd",
+        "onion",
+        "tomato",
+        "mustard seeds"
+      ],
+      "tags": [
+        "curry",
+        "rice",
+        "easy"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Green Peas Fry",
+      "category": "Fry",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "green peas",
+        "onion",
+        "mustard seeds",
+        "turmeric"
+      ],
+      "tags": [
+        "fry",
+        "easy"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Tomato Pappu",
+      "category": "Daal",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "toor dal",
+        "moong dal",
+        "tomato",
+        "onion",
+        "turmeric",
+        "mustard seeds"
+      ],
+      "tags": [
+        "daal",
+        "rice",
+        "easy"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Egg Burji",
+      "category": "Egg",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "egg",
+        "onion",
+        "tomato",
+        "green chili",
+        "turmeric"
+      ],
+      "tags": [
+        "egg",
+        "easy",
+        "quick"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Maggie",
+      "category": "Noodles",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "maggi noodles",
+        "maggi masala",
+        "onion",
+        "tomato"
+      ],
+      "tags": [
+        "noodles",
+        "easy",
+        "quick"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Lemon Rice",
+      "category": "Rice",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "rice",
+        "lemon",
+        "mustard seeds",
+        "peanut",
+        "curry leaves",
+        "turmeric"
+      ],
+      "tags": [
+        "rice",
+        "easy"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Green Peas & Carrot Fry",
+      "category": "Fry",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "green peas",
+        "carrot",
+        "onion",
+        "mustard seeds",
+        "turmeric"
+      ],
+      "tags": [
+        "fry",
+        "easy"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Quesadilla",
+      "category": "Other",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "tortilla",
+        "cheese",
+        "onion",
+        "capsicum"
+      ],
+      "tags": [
+        "fusion",
+        "easy"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Pongal",
+      "category": "Rice",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "rice",
+        "moong dal",
+        "ghee",
+        "pepper",
+        "cumin",
+        "cashew"
+      ],
+      "tags": [
+        "rice",
+        "breakfast",
+        "easy"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Pesarapappu Kattu",
+      "category": "Daal",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "moong dal",
+        "turmeric",
+        "mustard seeds",
+        "curry leaves"
+      ],
+      "tags": [
+        "daal",
+        "easy",
+        "rice"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Rasam",
+      "category": "Soup",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "tomato",
+        "tamarind",
+        "toor dal",
+        "pepper",
+        "cumin",
+        "mustard seeds"
+      ],
+      "tags": [
+        "soup",
+        "rice",
+        "easy"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Potato & Onion Mudda Curry",
+      "category": "Curry",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "potato",
+        "onion",
+        "mustard seeds",
+        "turmeric",
+        "curry leaves"
+      ],
+      "tags": [
+        "curry",
+        "rice",
+        "easy"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Tofu Fry",
+      "category": "Fry",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "tofu",
+        "onion",
+        "soy sauce",
+        "garlic",
+        "pepper"
+      ],
+      "tags": [
+        "fry",
+        "easy",
+        "protein"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Khichdi",
+      "category": "Rice",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "rice",
+        "moong dal",
+        "turmeric",
+        "ghee",
+        "cumin"
+      ],
+      "tags": [
+        "rice",
+        "easy",
+        "comfort"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Cauliflower Fry / Curry",
+      "category": "Fry",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "cauliflower",
+        "onion",
+        "tomato",
+        "turmeric",
+        "red chili"
+      ],
+      "tags": [
+        "fry",
+        "curry",
+        "easy"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Potols Fry",
+      "category": "Fry",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "potols",
+        "pointed gourd",
+        "onion",
+        "mustard seeds",
+        "turmeric"
+      ],
+      "tags": [
+        "fry",
+        "easy"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Cabbage Fry",
+      "category": "Fry",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "cabbage",
+        "onion",
+        "mustard seeds",
+        "turmeric",
+        "green chili"
+      ],
+      "tags": [
+        "fry",
+        "easy"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Anabakaya Curry",
+      "category": "Curry",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "anabakaya",
+        "bottle gourd",
+        "onion",
+        "tomato",
+        "mustard seeds"
+      ],
+      "tags": [
+        "curry",
+        "easy"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Spinach Curry",
+      "category": "Curry",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "spinach",
+        "onion",
+        "tomato",
+        "garlic",
+        "cumin"
+      ],
+      "tags": [
+        "curry",
+        "easy",
+        "healthy"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Egg Plant / Brinjal Fry",
+      "category": "Fry",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "brinjal",
+        "eggplant",
+        "onion",
+        "mustard seeds",
+        "turmeric"
+      ],
+      "tags": [
+        "fry",
+        "easy"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Curd Rice with Papu",
+      "category": "Rice",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "rice",
+        "curd",
+        "mustard seeds",
+        "curry leaves",
+        "lentils"
+      ],
+      "tags": [
+        "rice",
+        "easy",
+        "comfort"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Pongal with Quinoa",
+      "category": "Rice",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": [
+        "quinoa",
+        "moong dal",
+        "ghee",
+        "pepper",
+        "cumin",
+        "cashew"
+      ],
+      "tags": [
+        "rice",
+        "healthy",
+        "easy"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Salad",
+      "category": "Healthy",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "cucumber",
+        "tomato",
+        "onion",
+        "lemon",
+        "salt"
+      ],
+      "tags": [
+        "healthy",
+        "easy"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Edamame",
+      "category": "Healthy",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "edamame",
+        "salt"
+      ],
+      "tags": [
+        "healthy",
+        "snack",
+        "easy"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Soup",
+      "category": "Soup",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "vegetables",
+        "onion",
+        "garlic",
+        "pepper"
+      ],
+      "tags": [
+        "healthy",
+        "soup"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Sandwich",
+      "category": "Other",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "bread",
+        "cheese",
+        "vegetables"
+      ],
+      "tags": [
+        "healthy",
+        "easy",
+        "quick"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Pappu Chaaru",
+      "category": "Daal",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "toor dal",
+        "tomato",
+        "tamarind",
+        "mustard seeds",
+        "red chili",
+        "curry leaves"
+      ],
+      "tags": [
+        "daal",
+        "soup",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Chikudakaya Pulusu",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "chikudakaya",
+        "flat beans",
+        "tamarind",
+        "onion",
+        "tomato",
+        "mustard seeds"
+      ],
+      "tags": [
+        "curry",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Palakoora Pappu",
+      "category": "Daal",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "toor dal",
+        "spinach",
+        "onion",
+        "tomato",
+        "turmeric",
+        "mustard seeds"
+      ],
+      "tags": [
+        "daal",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Egg Attu Pulusu",
+      "category": "Egg",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "egg",
+        "tamarind",
+        "onion",
+        "tomato",
+        "mustard seeds",
+        "curry leaves"
+      ],
+      "tags": [
+        "egg",
+        "rice",
+        "medium",
+        "pulusu"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Vadiyalu Tomato Pulusu",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "vadiyalu",
+        "tomato",
+        "tamarind",
+        "onion",
+        "mustard seeds"
+      ],
+      "tags": [
+        "curry",
+        "rice",
+        "medium",
+        "pulusu"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Kobbari Chanaga Pappu",
+      "category": "Daal",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "chana dal",
+        "coconut",
+        "onion",
+        "mustard seeds",
+        "curry leaves"
+      ],
+      "tags": [
+        "daal",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Beerakaya Pappu",
+      "category": "Daal",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "chana dal",
+        "beerakaya",
+        "ridge gourd",
+        "onion",
+        "tomato",
+        "mustard seeds"
+      ],
+      "tags": [
+        "daal",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Bhindi Fry",
+      "category": "Fry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "bendakaya",
+        "okra",
+        "onion",
+        "mustard seeds",
+        "turmeric",
+        "red chili"
+      ],
+      "tags": [
+        "fry",
+        "medium"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Dondakaya Fry",
+      "category": "Fry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "dondakaya",
+        "ivy gourd",
+        "onion",
+        "mustard seeds",
+        "turmeric"
+      ],
+      "tags": [
+        "fry",
+        "medium"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Egg Curry",
+      "category": "Egg",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "egg",
+        "onion",
+        "tomato",
+        "garam masala",
+        "turmeric"
+      ],
+      "tags": [
+        "egg",
+        "curry",
+        "medium"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Pasta (Basil)",
+      "category": "Pasta",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "pasta",
+        "basil",
+        "olive oil",
+        "garlic",
+        "tomato"
+      ],
+      "tags": [
+        "pasta",
+        "medium"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Batani Curry",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "yellow peas",
+        "batani",
+        "onion",
+        "tomato",
+        "garam masala"
+      ],
+      "tags": [
+        "curry",
+        "medium",
+        "roti",
+        "rice"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Tempeh Curry",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "dharani",
+      "keyIngredients": [
+        "tempeh",
+        "onion",
+        "tomato",
+        "coconut milk",
+        "curry leaves"
+      ],
+      "tags": [
+        "curry",
+        "medium",
+        "protein"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Masoor Daal",
+      "category": "Daal",
+      "time": "medium",
+      "preference": "dharani",
+      "keyIngredients": [
+        "masoor dal",
+        "onion",
+        "tomato",
+        "turmeric",
+        "mustard seeds"
+      ],
+      "tags": [
+        "daal",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Egg Plant Fry",
+      "category": "Fry",
+      "time": "medium",
+      "preference": "dharani",
+      "keyIngredients": [
+        "brinjal",
+        "eggplant",
+        "onion",
+        "mustard seeds",
+        "turmeric"
+      ],
+      "tags": [
+        "fry",
+        "medium"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Mushroom Curry",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "mushroom",
+        "onion",
+        "tomato",
+        "garam masala",
+        "cream"
+      ],
+      "tags": [
+        "curry",
+        "roti",
+        "pulao",
+        "medium"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Paneer Curry",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "paneer",
+        "onion",
+        "tomato",
+        "cream",
+        "garam masala",
+        "kasuri methi"
+      ],
+      "tags": [
+        "curry",
+        "roti",
+        "pulao",
+        "medium"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Meal Maker Curry",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "soy chunks",
+        "meal maker",
+        "onion",
+        "tomato",
+        "garam masala"
+      ],
+      "tags": [
+        "curry",
+        "roti",
+        "pulao",
+        "medium",
+        "protein"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Aloo Green Peas Cashew Curry",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "potato",
+        "green peas",
+        "cashew",
+        "onion",
+        "tomato",
+        "garam masala"
+      ],
+      "tags": [
+        "curry",
+        "roti",
+        "pulao",
+        "medium"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Aloo Cauliflower Cashew Curry",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "potato",
+        "cauliflower",
+        "cashew",
+        "onion",
+        "tomato",
+        "garam masala"
+      ],
+      "tags": [
+        "curry",
+        "roti",
+        "pulao",
+        "medium"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Batani Curry with Aloo",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "yellow peas",
+        "batani",
+        "potato",
+        "onion",
+        "tomato",
+        "garam masala"
+      ],
+      "tags": [
+        "curry",
+        "roti",
+        "medium"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Rajma",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "kidney beans",
+        "rajma",
+        "onion",
+        "tomato",
+        "garam masala",
+        "ginger",
+        "garlic"
+      ],
+      "tags": [
+        "curry",
+        "roti",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Chickpea Curry",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "chickpea",
+        "onion",
+        "tomato",
+        "garam masala",
+        "ginger",
+        "garlic"
+      ],
+      "tags": [
+        "curry",
+        "roti",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Pulao & Curry",
+      "category": "Rice",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "rice",
+        "vegetables",
+        "onion",
+        "garam masala",
+        "ghee",
+        "bay leaf"
+      ],
+      "tags": [
+        "rice",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Roti & Curry",
+      "category": "Roti",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "wheat flour",
+        "ghee",
+        "curry of choice"
+      ],
+      "tags": [
+        "roti",
+        "time-consuming",
+        "tiffin"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Aloo Paratha",
+      "category": "Roti",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "wheat flour",
+        "potato",
+        "onion",
+        "green chili",
+        "cumin",
+        "ghee"
+      ],
+      "tags": [
+        "roti",
+        "breakfast",
+        "time-consuming",
+        "tiffin"
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Triangle Roti & Curry",
+      "category": "Roti",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "wheat flour",
+        "ghee",
+        "curry of choice"
+      ],
+      "tags": [
+        "roti",
+        "time-consuming",
+        "tiffin"
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Veg Hakka Noodles",
+      "category": "Noodles",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "hakka noodles",
+        "cabbage",
+        "carrot",
+        "capsicum",
+        "soy sauce",
+        "vinegar"
+      ],
+      "tags": [
+        "noodles",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Chicken Hakka Noodles",
+      "category": "Noodles",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "hakka noodles",
+        "chicken",
+        "cabbage",
+        "carrot",
+        "soy sauce",
+        "vinegar"
+      ],
+      "tags": [
+        "noodles",
+        "time-consuming",
+        "chicken"
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Vankaya Bendakaya Pulusu",
+      "category": "Curry",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "vankaya",
+        "brinjal",
+        "bendakaya",
+        "okra",
+        "tamarind",
+        "onion",
+        "toor dal"
+      ],
+      "tags": [
+        "curry",
+        "pulusu",
+        "rice",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Allam Pulusu",
+      "category": "Curry",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "ginger",
+        "allam",
+        "tamarind",
+        "lentils",
+        "onion",
+        "mustard seeds"
+      ],
+      "tags": [
+        "curry",
+        "pulusu",
+        "rice",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Gutti Vankaya",
+      "category": "Curry",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "brinjal",
+        "vankaya",
+        "peanut",
+        "onion",
+        "tamarind",
+        "sesame",
+        "coconut"
+      ],
+      "tags": [
+        "curry",
+        "rice",
+        "time-consuming",
+        "stuffed"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Fried Rice & Curry",
+      "category": "Rice",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "rice",
+        "egg",
+        "vegetables",
+        "soy sauce",
+        "onion",
+        "garlic"
+      ],
+      "tags": [
+        "rice",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Chikudakaya Onion Masala Fry",
+      "category": "Fry",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "chikudakaya",
+        "flat beans",
+        "onion",
+        "masala",
+        "mustard seeds",
+        "turmeric"
+      ],
+      "tags": [
+        "fry",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Dondakaya Onion Masala Fry",
+      "category": "Fry",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "dondakaya",
+        "ivy gourd",
+        "onion",
+        "masala",
+        "mustard seeds",
+        "turmeric"
+      ],
+      "tags": [
+        "fry",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Pasta Tomato",
+      "category": "Pasta",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "pasta",
+        "tomato",
+        "garlic",
+        "olive oil",
+        "basil",
+        "onion"
+      ],
+      "tags": [
+        "pasta",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Tamarind Rice",
+      "category": "Rice",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "rice",
+        "tamarind",
+        "peanut",
+        "mustard seeds",
+        "curry leaves",
+        "red chili"
+      ],
+      "tags": [
+        "rice",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Manchurian Noodles",
+      "category": "Noodles",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "noodles",
+        "cabbage",
+        "carrot",
+        "soy sauce",
+        "garlic",
+        "ginger",
+        "cornflour"
+      ],
+      "tags": [
+        "noodles",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Manchurian Fry",
+      "category": "Fry",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "cabbage",
+        "carrot",
+        "soy sauce",
+        "garlic",
+        "ginger",
+        "cornflour"
+      ],
+      "tags": [
+        "fry",
+        "time-consuming",
+        "starter"
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Pesarapappu Punugula Pulusu",
+      "category": "Curry",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "moong dal",
+        "tamarind",
+        "onion",
+        "mustard seeds",
+        "curry leaves"
+      ],
+      "tags": [
+        "curry",
+        "pulusu",
+        "rice",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Veg Soup",
+      "category": "Soup",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "mixed vegetables",
+        "onion",
+        "garlic",
+        "pepper",
+        "salt"
+      ],
+      "tags": [
+        "soup",
+        "healthy"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Sweet Corn Chicken Soup",
+      "category": "Soup",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "sweet corn",
+        "chicken",
+        "egg",
+        "cornflour",
+        "pepper",
+        "salt"
+      ],
+      "tags": [
+        "soup",
+        "chicken"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Tomato Soup",
+      "category": "Soup",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "tomato",
+        "onion",
+        "garlic",
+        "cream",
+        "pepper",
+        "butter"
+      ],
+      "tags": [
+        "soup",
+        "healthy"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Black Bean Soup",
+      "category": "Soup",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "black beans",
+        "onion",
+        "garlic",
+        "cumin",
+        "tomato"
+      ],
+      "tags": [
+        "soup",
+        "healthy"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Chana Vada",
+      "category": "Snack",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "chana dal",
+        "onion",
+        "green chili",
+        "curry leaves",
+        "oil"
+      ],
+      "tags": [
+        "snack",
+        "fried"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Pakodi",
+      "category": "Snack",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "chickpea flour",
+        "onion",
+        "green chili",
+        "curry leaves",
+        "oil"
+      ],
+      "tags": [
+        "snack",
+        "fried"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Muri Mixture",
+      "category": "Snack",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "puffed rice",
+        "muri",
+        "onion",
+        "tomato",
+        "sev",
+        "lemon"
+      ],
+      "tags": [
+        "snack",
+        "quick"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Masala Makhana",
+      "category": "Snack",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "makhana",
+        "fox nuts",
+        "ghee",
+        "turmeric",
+        "red chili",
+        "salt"
+      ],
+      "tags": [
+        "snack",
+        "healthy",
+        "quick"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Aloo Tikki",
+      "category": "Snack",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "potato",
+        "onion",
+        "green chili",
+        "bread crumbs",
+        "cumin",
+        "oil"
+      ],
+      "tags": [
+        "snack",
+        "fried"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Samose Chaat",
+      "category": "Snack",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "samosa",
+        "potato",
+        "chickpea",
+        "tamarind chutney",
+        "curd"
+      ],
+      "tags": [
+        "snack",
+        "chaat"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Kesari",
+      "category": "Sweet",
+      "time": "medium",
+      "preference": "shashi",
+      "keyIngredients": [
+        "semolina",
+        "sugar",
+        "ghee",
+        "saffron",
+        "cashew",
+        "cardamom"
+      ],
+      "tags": [
+        "sweet",
+        "dessert"
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Chakkala Pongali",
+      "category": "Sweet",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "rice",
+        "moong dal",
+        "jaggery",
+        "ghee",
+        "cashew",
+        "cardamom"
+      ],
+      "tags": [
+        "sweet",
+        "dessert",
+        "pongal"
+      ]
+    },
+    {
+      "id": 101,
+      "name": "Sunnunda",
+      "category": "Sweet",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "urad dal",
+        "jaggery",
+        "ghee",
+        "cardamom"
+      ],
+      "tags": [
+        "sweet",
+        "dessert",
+        "balls"
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Bobbatlu",
+      "category": "Sweet",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "wheat flour",
+        "chana dal",
+        "jaggery",
+        "ghee",
+        "cardamom",
+        "turmeric"
+      ],
+      "tags": [
+        "sweet",
+        "dessert",
+        "flatbread"
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Kandipappu (Toor Daal) Beerakaya",
+      "category": "Daal",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "toor dal",
+        "beerakaya",
+        "ridge gourd",
+        "onion",
+        "tomato",
+        "mustard seeds"
+      ],
+      "tags": [
+        "daal",
+        "rice",
+        "medium"
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Pesarapappu Tomato",
+      "category": "Daal",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "moong dal",
+        "tomato",
+        "onion",
+        "mustard seeds",
+        "curry leaves",
+        "turmeric"
+      ],
+      "tags": [
+        "daal",
+        "rice",
+        "easy"
+      ]
+    },
+    {
+      "id": 106,
+      "name": "Chicken Curry",
+      "category": "Chicken",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "chicken",
+        "onion",
+        "tomato",
+        "garam masala",
+        "ginger",
+        "garlic",
+        "curry leaves"
+      ],
+      "tags": [
+        "chicken",
+        "curry",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Chicken Biryani",
+      "category": "Chicken",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "chicken",
+        "basmati rice",
+        "onion",
+        "yogurt",
+        "garam masala",
+        "ginger",
+        "garlic",
+        "saffron",
+        "mint"
+      ],
+      "tags": [
+        "chicken",
+        "rice",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Chicken Fry",
+      "category": "Chicken",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "chicken",
+        "onion",
+        "red chili",
+        "ginger",
+        "garlic",
+        "turmeric",
+        "curry leaves",
+        "oil"
+      ],
+      "tags": [
+        "chicken",
+        "fry",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Chicken Pepper Fry",
+      "category": "Chicken",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "chicken",
+        "pepper",
+        "onion",
+        "ginger",
+        "garlic",
+        "curry leaves",
+        "turmeric",
+        "oil"
+      ],
+      "tags": [
+        "chicken",
+        "fry",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Chicken 65",
+      "category": "Chicken",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "chicken",
+        "yogurt",
+        "red chili",
+        "ginger",
+        "garlic",
+        "cornflour",
+        "curry leaves",
+        "oil"
+      ],
+      "tags": [
+        "chicken",
+        "fry",
+        "snack",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Paneer Paratha",
+      "category": "Roti",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "wheat flour",
+        "paneer",
+        "onion",
+        "green chili",
+        "cumin",
+        "ghee"
+      ],
+      "tags": [
+        "roti",
+        "tiffin",
+        "breakfast",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 112,
+      "name": "Tofu Paratha",
+      "category": "Roti",
+      "time": "time-consuming",
+      "preference": "dharani",
+      "keyIngredients": [
+        "wheat flour",
+        "tofu",
+        "onion",
+        "green chili",
+        "cumin",
+        "ghee"
+      ],
+      "tags": [
+        "roti",
+        "tiffin",
+        "breakfast",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 113,
+      "name": "Pesarattu Upma",
+      "category": "Tiffin",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "moong dal",
+        "green chili",
+        "ginger",
+        "onion",
+        "semolina",
+        "mustard seeds",
+        "curry leaves"
+      ],
+      "tags": [
+        "tiffin",
+        "breakfast",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 114,
+      "name": "Tilapia Shallow Fry",
+      "category": "Fish",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": [
+        "tilapia",
+        "red chili",
+        "turmeric",
+        "ginger",
+        "garlic",
+        "lemon",
+        "oil"
+      ],
+      "tags": [
+        "fish",
+        "fry",
+        "quick"
+      ]
+    },
+    {
+      "id": 115,
+      "name": "Salmon Curry",
+      "category": "Fish",
+      "time": "medium",
+      "preference": "dharani",
+      "keyIngredients": [
+        "salmon",
+        "onion",
+        "tomato",
+        "coconut milk",
+        "ginger",
+        "garlic",
+        "curry leaves"
+      ],
+      "tags": [
+        "fish",
+        "curry",
+        "medium"
+      ]
+    }
+  ]
+}
