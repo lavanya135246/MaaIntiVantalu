@@ -388,7 +388,7 @@ const MEAL_TYPES = {
   'Tiffins':          ['Tiffin','Roti'],
   'Snacks':           ['Snack'],
   'Veg Entree':       ['Curry','Fry'],
-  'Daal':             ['Daal'],
+  'Lentils & Legumes': ['Daal','Legume'],
   'Rice':             ['Rice'],
   'Non-veg Entree':   ['Chicken','Egg','Fish'],
   'Sweets':           ['Sweet'],
@@ -447,16 +447,35 @@ function render() {
     return;
   }
 
-  const groups = {};
-  filtered.forEach(r => { if (!groups[r.time]) groups[r.time]=[]; groups[r.time].push(r); });
-  Object.keys(groups).forEach(t => groups[t].sort((a,b) => a.name.localeCompare(b.name)));
-
   let html = '';
-  ['quick','medium','time-consuming'].forEach(t => {
-    if (!groups[t]) return;
-    if (activeTime === 'all') html += `<div class="section-divider"><span>${TIME_LABELS[t]}</span></div>`;
-    groups[t].forEach(r => { html += buildCard(r); });
-  });
+
+  // Group by Meal Type when no meal type filter is active
+  if (activeCat === 'all') {
+    Object.keys(MEAL_TYPES).forEach(mealType => {
+      const cats = MEAL_TYPES[mealType];
+      const items = filtered.filter(r => cats.includes(r.category)).sort((a,b) => a.name.localeCompare(b.name));
+      if (!items.length) return;
+      html += `<div class="section-divider"><span>${mealType}</span></div>`;
+      items.forEach(r => { html += buildCard(r); });
+    });
+    // Handle any uncategorized items
+    const allMealTypeCats = Object.values(MEAL_TYPES).flat();
+    const uncategorized = filtered.filter(r => !allMealTypeCats.includes(r.category)).sort((a,b) => a.name.localeCompare(b.name));
+    if (uncategorized.length) {
+      html += `<div class="section-divider"><span>Other</span></div>`;
+      uncategorized.forEach(r => { html += buildCard(r); });
+    }
+  } else {
+    // When meal type filter is active, group by cooking time
+    const groups = {};
+    filtered.forEach(r => { if (!groups[r.time]) groups[r.time]=[]; groups[r.time].push(r); });
+    Object.keys(groups).forEach(t => groups[t].sort((a,b) => a.name.localeCompare(b.name)));
+    ['quick','medium','time-consuming'].forEach(t => {
+      if (!groups[t]) return;
+      if (activeTime === 'all') html += `<div class="section-divider"><span>${TIME_LABELS[t]}</span></div>`;
+      groups[t].forEach(r => { html += buildCard(r); });
+    });
+  }
 
   list.innerHTML = html;
   list.querySelectorAll('.recipe-card').forEach(card => {
