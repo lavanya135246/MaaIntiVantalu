@@ -305,6 +305,78 @@
     .empty-state .emoji { font-size: 52px; margin-bottom: 16px; }
     .empty-state h3 { font-size: 18px; color: #1a2a3a; margin-bottom: 6px; }
     .empty-state p  { font-size: 14px; line-height: 1.6; }
+
+    /* ── COLLAPSIBLE PANELS ── */
+    .panel {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1.5px solid #d0e4f7;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 16px;
+      cursor: pointer;
+      user-select: none;
+      background: #1565c0;
+      color: #ffffff;
+    }
+
+    .panel-header:active { opacity: 0.85; }
+
+    .panel-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .panel-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .panel-count {
+      font-size: 11px;
+      background: rgba(255,255,255,0.25);
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .panel-chevron {
+      font-size: 16px;
+      transition: transform 0.3s;
+      line-height: 1;
+    }
+
+    .panel.open .panel-chevron { transform: rotate(180deg); }
+
+    .panel-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .panel.open .panel-body { max-height: 5000px; }
+
+    .panel-body-inner {
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Adjust recipe cards inside panels */
+    .panel .recipe-card {
+      border-radius: 12px;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -449,31 +521,71 @@ function render() {
 
   let html = '';
 
-  // Group by Meal Type when no meal type filter is active
   if (activeCat === 'all') {
+    // Group by Meal Type - collapsible panels
     Object.keys(MEAL_TYPES).forEach(mealType => {
       const cats = MEAL_TYPES[mealType];
       const items = filtered.filter(r => cats.includes(r.category)).sort((a,b) => a.name.localeCompare(b.name));
       if (!items.length) return;
-      html += `<div class="section-divider"><span>${mealType}</span></div>`;
-      items.forEach(r => { html += buildCard(r); });
+      const cards = items.map(r => buildCard(r)).join('');
+      html += `
+        <div class="panel open" data-panel="${mealType}">
+          <div class="panel-header" onclick="togglePanel(this)">
+            <span class="panel-title">${mealType}</span>
+            <div class="panel-meta">
+              <span class="panel-count">${items.length}</span>
+              <span class="panel-chevron">⌄</span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="panel-body-inner">${cards}</div>
+          </div>
+        </div>`;
     });
-    // Handle any uncategorized items
+    // Uncategorized
     const allMealTypeCats = Object.values(MEAL_TYPES).flat();
     const uncategorized = filtered.filter(r => !allMealTypeCats.includes(r.category)).sort((a,b) => a.name.localeCompare(b.name));
     if (uncategorized.length) {
-      html += `<div class="section-divider"><span>Other</span></div>`;
-      uncategorized.forEach(r => { html += buildCard(r); });
+      const cards = uncategorized.map(r => buildCard(r)).join('');
+      html += `
+        <div class="panel open" data-panel="Other">
+          <div class="panel-header" onclick="togglePanel(this)">
+            <span class="panel-title">Other</span>
+            <div class="panel-meta">
+              <span class="panel-count">${uncategorized.length}</span>
+              <span class="panel-chevron">⌄</span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="panel-body-inner">${cards}</div>
+          </div>
+        </div>`;
     }
   } else {
-    // When meal type filter is active, group by cooking time
+    // Meal type selected - group by cooking time, collapsible panels
     const groups = {};
     filtered.forEach(r => { if (!groups[r.time]) groups[r.time]=[]; groups[r.time].push(r); });
     Object.keys(groups).forEach(t => groups[t].sort((a,b) => a.name.localeCompare(b.name)));
     ['quick','medium','time-consuming'].forEach(t => {
       if (!groups[t]) return;
-      if (activeTime === 'all') html += `<div class="section-divider"><span>${TIME_LABELS[t]}</span></div>`;
-      groups[t].forEach(r => { html += buildCard(r); });
+      if (activeTime !== 'all') {
+        groups[t].forEach(r => { html += buildCard(r); });
+      } else {
+        const cards = groups[t].map(r => buildCard(r)).join('');
+        html += `
+          <div class="panel open" data-panel="${t}">
+            <div class="panel-header" onclick="togglePanel(this)">
+              <span class="panel-title">${TIME_LABELS[t]}</span>
+              <div class="panel-meta">
+                <span class="panel-count">${groups[t].length}</span>
+                <span class="panel-chevron">⌄</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-body-inner">${cards}</div>
+            </div>
+          </div>`;
+      }
     });
   }
 
@@ -485,6 +597,11 @@ function render() {
       if (!isOpen) { card.classList.add('open'); setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'nearest'}),50); }
     });
   });
+}
+
+function togglePanel(header) {
+  const panel = header.closest('.panel');
+  panel.classList.toggle('open');
 }
 
 function buildCard(r) {
