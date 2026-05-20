@@ -447,6 +447,7 @@ function render() {
 
   const groups = {};
   filtered.forEach(r => { if (!groups[r.time]) groups[r.time]=[]; groups[r.time].push(r); });
+  Object.keys(groups).forEach(t => groups[t].sort((a,b) => a.name.localeCompare(b.name)));
 
   let html = '';
   ['quick','medium','time-consuming'].forEach(t => {
