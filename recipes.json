@@ -753,7 +753,7 @@
     {
       "id": 43,
       "name": "Salad",
-      "category": "Healthy",
+      "category": "Salad",
       "time": "quick",
       "preference": "both",
       "keyIngredients": [
@@ -771,7 +771,7 @@
     {
       "id": 44,
       "name": "Edamame",
-      "category": "Healthy",
+      "category": "Other",
       "time": "quick",
       "preference": "both",
       "keyIngredients": [
@@ -782,23 +782,6 @@
         "healthy",
         "snack",
         "easy"
-      ]
-    },
-    {
-      "id": 45,
-      "name": "Soup",
-      "category": "Soup",
-      "time": "quick",
-      "preference": "both",
-      "keyIngredients": [
-        "vegetables",
-        "onion",
-        "garlic",
-        "pepper"
-      ],
-      "tags": [
-        "healthy",
-        "soup"
       ]
     },
     {
@@ -1670,7 +1653,7 @@
       "name": "Black Bean Soup",
       "category": "Soup",
       "time": "medium",
-      "preference": "both",
+      "preference": "dharani",
       "keyIngredients": [
         "black beans",
         "onion",
@@ -1685,7 +1668,7 @@
     },
     {
       "id": 93,
-      "name": "Chana Vada",
+      "name": "Masala Vada",
       "category": "Snack",
       "time": "medium",
       "preference": "both",
