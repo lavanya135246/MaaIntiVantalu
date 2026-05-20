@@ -200,25 +200,6 @@
       ]
     },
     {
-      "id": 12,
-      "name": "Vada",
-      "category": "Tiffin",
-      "time": "medium",
-      "preference": "both",
-      "keyIngredients": [
-        "urad dal",
-        "onion",
-        "green chili",
-        "curry leaves",
-        "oil"
-      ],
-      "tags": [
-        "breakfast",
-        "tiffin",
-        "fried"
-      ]
-    },
-    {
       "id": 13,
       "name": "Kandi Pappu (Chana Dal) Chutney",
       "category": "Chutney",
@@ -2143,6 +2124,65 @@
       ],
       "tags": [
         "fish",
+        "curry",
+        "medium"
+      ]
+    },
+    {
+      "id": 116,
+      "name": "Palak Tofu",
+      "category": "Curry",
+      "time": "time-consuming",
+      "preference": "dharani",
+      "keyIngredients": [
+        "tofu",
+        "spinach",
+        "onion",
+        "tomato",
+        "ginger",
+        "garlic",
+        "garam masala"
+      ],
+      "tags": [
+        "curry",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 117,
+      "name": "Palak Paneer",
+      "category": "Curry",
+      "time": "time-consuming",
+      "preference": "both",
+      "keyIngredients": [
+        "paneer",
+        "spinach",
+        "onion",
+        "tomato",
+        "ginger",
+        "garlic",
+        "garam masala"
+      ],
+      "tags": [
+        "curry",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "Palak Bhurji",
+      "category": "Curry",
+      "time": "medium",
+      "preference": "both",
+      "keyIngredients": [
+        "paneer",
+        "onion",
+        "spinach",
+        "green chili",
+        "cumin",
+        "turmeric"
+      ],
+      "tags": [
         "curry",
         "medium"
       ]
