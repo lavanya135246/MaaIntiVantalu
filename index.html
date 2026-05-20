@@ -337,7 +337,8 @@
 
   <div class="filter-label">Preference</div>
   <div class="filter-row" id="prefFilters">
-    <button class="chip pref-chip active" data-value="both">Both</button>
+    <button class="chip pref-chip active" data-value="all">All</button>
+    <button class="chip pref-chip" data-value="both">Both</button>
     <button class="chip pref-chip" data-value="shashi">Shashi</button>
     <button class="chip pref-chip" data-value="dharani">Dharani</button>
   </div>
@@ -370,7 +371,7 @@ const ICONS = {Daal:'🫘',Curry:'🍲',Fry:'🥘',Tiffin:'🫓',Rice:'🍚',Chu
 const TIME_LABELS = {'quick':'Quick','medium':'Medium','time-consuming':'Slow Cook'};
 const PREF_LABELS = {'both':'Both','shashi':'Shashi','dharani':'Dharani'};
 
-let activeTime='all', activePref='both', activeCat='all', searchQuery='';
+let activeTime='all', activePref='all', activeCat='all', searchQuery='';
 
 // Build category chips
 const cats = [...new Set(RECIPES.map(r=>r.category))].sort();
@@ -419,9 +420,7 @@ function filterRecipes() {
   const q = searchQuery.toLowerCase().trim();
   return RECIPES.filter(r => {
     if (activeTime !== 'all' && r.time !== activeTime) return false;
-    if (activePref === 'both' && r.preference !== 'both') return false;
-    if (activePref === 'shashi' && r.preference !== 'both' && r.preference !== 'shashi') return false;
-    if (activePref === 'dharani' && r.preference !== 'both' && r.preference !== 'dharani') return false;
+    if (activePref !== 'all' && r.preference !== activePref) return false;
     if (activeCat !== 'all') {
       const allowed = MEAL_TYPES[activeCat] || [];
       if (!allowed.includes(r.category)) return false;
