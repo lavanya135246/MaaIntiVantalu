@@ -2186,6 +2186,40 @@
         "curry",
         "medium"
       ]
+    },
+    {
+      "id": 119,
+      "name": "Pappu Talikalu",
+      "category": "Sweet",
+      "time": "time-consuming",
+      "preference": "shashi",
+      "keyIngredients": [
+        "rice flour",
+        "moong dal",
+        "coconut",
+        "cashew nuts"
+      ],
+      "tags": [
+        "sweet",
+        "time-consuming"
+      ]
+    },
+    {
+      "id": 120,
+      "name": "Pala Talikalu",
+      "category": "Sweet",
+      "time": "time-consuming",
+      "preference": "shashi",
+      "keyIngredients": [
+        "rice flour",
+        "milk",
+        "coconut",
+        "cashew nuts"
+      ],
+      "tags": [
+        "sweet",
+        "time-consuming"
+      ]
     }
   ]
 }
