@@ -217,6 +217,14 @@
       font-size: 22px;
       flex-shrink: 0;
       background: #F2C4B5;
+      overflow: hidden;
+    }
+
+    .category-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .card-title-wrap { flex: 1; min-width: 0; }
@@ -424,6 +432,43 @@
 
 <script>
 let RECIPES = [];
+let imgObserver = null;
+
+async function fetchWikipediaImage(name) {
+  const key = 'wiki_img_' + name;
+  const cached = sessionStorage.getItem(key);
+  if (cached !== null) return cached;
+  try {
+    const res = await fetch(
+      'https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(name),
+      { headers: { Accept: 'application/json' } }
+    );
+    const data = res.ok ? await res.json() : {};
+    const url = data.thumbnail?.source ?? '';
+    sessionStorage.setItem(key, url);
+    return url;
+  } catch {
+    sessionStorage.setItem(key, '');
+    return '';
+  }
+}
+
+function setupImageObserver() {
+  if (imgObserver) imgObserver.disconnect();
+  imgObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      imgObserver.unobserve(entry.target);
+      const el = entry.target;
+      fetchWikipediaImage(el.dataset.recipeName).then(url => {
+        if (url && el.isConnected) {
+          el.innerHTML = '<img src="' + url + '" alt="">';
+        }
+      });
+    });
+  }, { rootMargin: '150px' });
+  document.querySelectorAll('.category-icon[data-recipe-name]').forEach(el => imgObserver.observe(el));
+}
 
 async function loadRecipes() {
   try {
@@ -597,6 +642,7 @@ function render() {
       if (!isOpen) { card.classList.add('open'); setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'nearest'}),50); }
     });
   });
+  setupImageObserver();
 }
 
 function togglePanel(header) {
@@ -612,7 +658,7 @@ function buildCard(r) {
   return `
     <div class="recipe-card" data-id="${r.id}">
       <div class="card-header">
-        <div class="category-icon">${ICONS[r.category]||'🍴'}</div>
+        <div class="category-icon" data-recipe-name="${r.name}">${ICONS[r.category]||'🍴'}</div>
         <div class="card-title-wrap">
           <div class="card-name">${r.name}</div>
           <div class="card-meta">
