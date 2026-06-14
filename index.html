@@ -385,6 +385,340 @@
       border-radius: 12px;
       margin: 0;
     }
+
+    /* ── BOTTOM NAV ── */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      background: #fff;
+      border-top: 1px solid #DDD0C2;
+      z-index: 200;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
+    }
+
+    .nav-btn {
+      flex: 1;
+      padding: 12px 0 18px;
+      border: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: #B8A898;
+      cursor: pointer;
+      transition: color 0.15s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .nav-btn.active { color: #C14A2A; }
+    .nav-btn span { font-size: 20px; }
+
+    /* ── DIARY PAGE ── */
+    .diary-date-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      background: #F8F2EC;
+      border-bottom: 1px solid #DDD0C2;
+    }
+
+    .date-arrow {
+      width: 36px;
+      height: 36px;
+      border: none;
+      background: #fff;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .date-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1F2E25;
+      text-align: center;
+    }
+
+    .date-sub {
+      font-size: 11px;
+      color: #6B7A62;
+      text-align: center;
+      margin-top: 2px;
+    }
+
+    .diary-actions {
+      display: flex;
+      gap: 10px;
+      margin: 12px 16px;
+    }
+
+    .recommend-bar {
+      flex: 1;
+      background: #2B4F3C;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 16px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .export-btn {
+      background: #F8F2EC;
+      color: #6B7A62;
+      border: 1.5px solid #DDD0C2;
+      border-radius: 12px;
+      padding: 13px 14px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .meal-section {
+      margin: 0 16px 10px;
+      background: #fff;
+      border-radius: 16px;
+      border: 1.5px solid #DDD0C2;
+      overflow: hidden;
+    }
+
+    .meal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: #F8F2EC;
+      border-bottom: 1px solid #EDE8DC;
+    }
+
+    .meal-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #C14A2A;
+    }
+
+    .meal-add-btn {
+      padding: 4px 12px;
+      border: 1.5px solid #C14A2A;
+      border-radius: 20px;
+      background: transparent;
+      color: #C14A2A;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .meal-items {
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-height: 46px;
+    }
+
+    .meal-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #F8F2EC;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #1F2E25;
+    }
+
+    .meal-remove {
+      border: none;
+      background: transparent;
+      color: #B8A898;
+      font-size: 18px;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0 0 0 8px;
+    }
+
+    .meal-empty {
+      font-size: 12px;
+      color: #B8A898;
+      font-style: italic;
+    }
+
+    /* ── MODALS ── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 300;
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-sheet {
+      background: #fff;
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      max-width: 480px;
+      max-height: 82vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-header {
+      padding: 16px 16px 10px;
+      border-bottom: 1px solid #EDE8DC;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+
+    .modal-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1F2E25;
+    }
+
+    .modal-close {
+      border: none;
+      background: #EDE8DC;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #5A4A38;
+      font-weight: 700;
+    }
+
+    .modal-search {
+      margin: 10px 16px;
+      padding: 9px 14px;
+      border: 1.5px solid #DDD0C2;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      background: #F8F2EC;
+      color: #1F2E25;
+      flex-shrink: 0;
+    }
+
+    .modal-list {
+      overflow-y: auto;
+      flex: 1;
+      padding: 0 16px 24px;
+    }
+
+    .picker-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 0;
+      border-bottom: 1px solid #F0E8DC;
+      cursor: pointer;
+    }
+
+    .picker-item:last-child { border-bottom: none; }
+    .picker-item:active { opacity: 0.65; }
+    .picker-icon { font-size: 20px; }
+
+    .picker-name {
+      flex: 1;
+      font-size: 14px;
+      font-weight: 500;
+      color: #1F2E25;
+    }
+
+    .picker-cat {
+      font-size: 11px;
+      color: #6B7A62;
+    }
+
+    /* ── RECOMMENDATIONS ── */
+    .rec-body {
+      overflow-y: auto;
+      flex: 1;
+      padding: 14px 16px 24px;
+    }
+
+    .rec-pref-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .rec-section { margin-bottom: 14px; }
+
+    .rec-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #6B7A62;
+      margin-bottom: 8px;
+    }
+
+    .rec-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #F8F2EC;
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #1F2E25;
+    }
+
+    .rec-item-icon { font-size: 18px; }
+
+    .rec-empty {
+      font-size: 12px;
+      color: #B8A898;
+      font-style: italic;
+      padding: 4px 0 8px;
+    }
+
+    .rec-log-btn {
+      display: block;
+      width: 100%;
+      margin-top: 16px;
+      background: #C14A2A;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -406,6 +740,7 @@
   </div>
 </header>
 
+<div id="page-recipes">
 <div class="filters">
   <div class="filter-label">Cooking Time</div>
   <div class="filter-row" id="timeFilters">
@@ -429,6 +764,42 @@
 
 <div class="results-bar" id="resultsBar"></div>
 <div class="recipe-list" id="recipeList"></div>
+</div><!-- #page-recipes -->
+
+<div id="page-diary" style="display:none"></div>
+
+<!-- Recipe picker bottom sheet -->
+<div class="modal-overlay" id="picker-overlay" onclick="if(event.target===this)closePicker()">
+  <div class="modal-sheet">
+    <div class="modal-header">
+      <span class="modal-title" id="picker-title">Add Item</span>
+      <button class="modal-close" onclick="closePicker()">✕</button>
+    </div>
+    <input class="modal-search" id="picker-search" placeholder="Search recipes…"
+           oninput="renderPickerList(this.value)" autocomplete="off" />
+    <div class="modal-list" id="picker-list"></div>
+  </div>
+</div>
+
+<!-- Recommendations bottom sheet -->
+<div class="modal-overlay" id="rec-overlay" onclick="if(event.target===this)closeRec()">
+  <div class="modal-sheet">
+    <div class="modal-header">
+      <span class="modal-title">✨ Today's Menu</span>
+      <button class="modal-close" onclick="closeRec()">✕</button>
+    </div>
+    <div class="rec-body" id="rec-body"></div>
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <button class="nav-btn active" data-page="recipes" onclick="showPage('recipes')">
+    <span>📋</span>Recipes
+  </button>
+  <button class="nav-btn" data-page="diary" onclick="showPage('diary')">
+    <span>📅</span>My Diary
+  </button>
+</nav>
 
 <script>
 let RECIPES = [];
@@ -702,6 +1073,251 @@ document.getElementById('clearBtn').addEventListener('click', () => {
   document.getElementById('clearBtn').style.display = 'none';
   render();
 });
+
+// ── DIARY: CONSTANTS ──
+const MEAL_KEYS   = ['breakfast','lunch','dinner','snack'];
+const MEAL_LABELS = { breakfast:'☀️ Breakfast', lunch:'🍱 Lunch', dinner:'🌙 Dinner', snack:'🧆 Snack' };
+
+// ── DIARY: STORAGE ──
+function getMonthKey(d) {
+  return 'food_log_' + d.getFullYear() + '_' + String(d.getMonth()+1).padStart(2,'0');
+}
+function getDayKey(d) {
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+function getMonthLog(d) {
+  try { return JSON.parse(localStorage.getItem(getMonthKey(d))) || {}; } catch { return {}; }
+}
+function getDayLog(d) {
+  const m = getMonthLog(d);
+  return m[getDayKey(d)] || { breakfast:[], lunch:[], dinner:[], snack:[] };
+}
+function saveDayLog(d, dayLog) {
+  const mKey = getMonthKey(d);
+  const mLog = getMonthLog(d);
+  mLog[getDayKey(d)] = dayLog;
+  localStorage.setItem(mKey, JSON.stringify(mLog));
+}
+
+// ── DIARY: STATE ──
+let diaryDate = new Date();
+let pickerMeal = null;
+let recPref    = 'all';
+let lastRecs   = null;
+
+// ── NAVIGATION ──
+function showPage(page) {
+  document.getElementById('page-recipes').style.display = page === 'recipes' ? '' : 'none';
+  document.getElementById('page-diary').style.display   = page === 'diary'   ? '' : 'none';
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.toggle('active', b.dataset.page === page));
+  if (page === 'diary') renderDiary();
+}
+
+// ── DIARY: RENDER ──
+function formatDiaryDate(d) {
+  const todayKey = getDayKey(new Date());
+  const yday = new Date(); yday.setDate(yday.getDate()-1);
+  if (getDayKey(d) === todayKey) return 'Today';
+  if (getDayKey(d) === getDayKey(yday)) return 'Yesterday';
+  return d.toLocaleDateString('en-IN', { weekday:'short', day:'numeric', month:'short' });
+}
+
+function renderDiary() {
+  const log = getDayLog(diaryDate);
+  const isToday = getDayKey(diaryDate) === getDayKey(new Date());
+
+  const mealsHtml = MEAL_KEYS.map(meal => {
+    const ids = log[meal] || [];
+    const items = ids.map(id => RECIPES.find(r => r.id === id)).filter(Boolean);
+    const itemsHtml = items.length
+      ? items.map(r =>
+          `<div class="meal-item">
+            <span>${ICONS[r.category]||'🍴'} ${r.name}</span>
+            <button class="meal-remove" onclick="removeMealItem('${meal}',${r.id})">×</button>
+          </div>`).join('')
+      : '<div class="meal-empty">Nothing logged yet</div>';
+    return `
+      <div class="meal-section">
+        <div class="meal-header">
+          <span class="meal-title">${MEAL_LABELS[meal]}</span>
+          <button class="meal-add-btn" onclick="openPicker('${meal}')">+ Add</button>
+        </div>
+        <div class="meal-items">${itemsHtml}</div>
+      </div>`;
+  }).join('');
+
+  const monthLabel = diaryDate.toLocaleDateString('en-IN', { month:'long', year:'numeric' });
+
+  document.getElementById('page-diary').innerHTML = `
+    <div class="diary-date-nav">
+      <button class="date-arrow" onclick="shiftDate(-1)">‹</button>
+      <div>
+        <div class="date-label">${formatDiaryDate(diaryDate)}</div>
+        <div class="date-sub">${diaryDate.toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'})}</div>
+      </div>
+      <button class="date-arrow" onclick="shiftDate(1)"${isToday?' disabled style="opacity:0.3;cursor:default"':''}>›</button>
+    </div>
+    <div class="diary-actions">
+      <button class="recommend-bar" onclick="openRecommendations()">✨ Get Today's Recommendations</button>
+      <button class="export-btn" onclick="exportMonth()">📥 Export</button>
+    </div>
+    ${mealsHtml}`;
+}
+
+function shiftDate(delta) {
+  const d = new Date(diaryDate);
+  d.setDate(d.getDate() + delta);
+  if (delta > 0 && getDayKey(d) > getDayKey(new Date())) return;
+  diaryDate = d;
+  renderDiary();
+}
+
+function removeMealItem(meal, id) {
+  const log = getDayLog(diaryDate);
+  log[meal] = (log[meal] || []).filter(x => x !== id);
+  saveDayLog(diaryDate, log);
+  renderDiary();
+}
+
+function exportMonth() {
+  const data = localStorage.getItem(getMonthKey(diaryDate)) || '{}';
+  const name = `food_log_${getMonthKey(diaryDate)}.json`;
+  const a = Object.assign(document.createElement('a'), {
+    href: URL.createObjectURL(new Blob([data], {type:'application/json'})),
+    download: name
+  });
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+// ── PICKER MODAL ──
+function openPicker(meal) {
+  pickerMeal = meal;
+  document.getElementById('picker-title').textContent = 'Add to ' + MEAL_LABELS[meal];
+  document.getElementById('picker-search').value = '';
+  renderPickerList('');
+  document.getElementById('picker-overlay').classList.add('open');
+  setTimeout(() => document.getElementById('picker-search').focus(), 120);
+}
+
+function closePicker() {
+  document.getElementById('picker-overlay').classList.remove('open');
+  pickerMeal = null;
+}
+
+function renderPickerList(query) {
+  if (!pickerMeal) return;
+  const log = getDayLog(diaryDate);
+  const added = new Set(log[pickerMeal] || []);
+  const q = query.toLowerCase();
+  const matches = RECIPES.filter(r =>
+    !added.has(r.id) &&
+    (!q || r.name.toLowerCase().includes(q) || r.category.toLowerCase().includes(q))
+  );
+  document.getElementById('picker-list').innerHTML = matches.length
+    ? matches.map(r =>
+        `<div class="picker-item" onclick="addMealItem(${r.id})">
+          <span class="picker-icon">${ICONS[r.category]||'🍴'}</span>
+          <span class="picker-name">${r.name}</span>
+          <span class="picker-cat">${r.category}</span>
+        </div>`).join('')
+    : '<div style="padding:24px 0;text-align:center;font-size:13px;color:#B8A898">No matches</div>';
+}
+
+function addMealItem(id) {
+  if (!pickerMeal) return;
+  const log = getDayLog(diaryDate);
+  if (!log[pickerMeal]) log[pickerMeal] = [];
+  if (!log[pickerMeal].includes(id)) log[pickerMeal].push(id);
+  saveDayLog(diaryDate, log);
+  closePicker();
+  renderDiary();
+}
+
+// ── RECOMMENDATIONS ──
+const REC_CATS = {
+  breakfast: ['Tiffin','Roti'],
+  lunch:     ['Rice','Curry','Fry','Daal','Legume','Chicken','Egg','Fish'],
+  dinner:    ['Curry','Fry','Roti','Chicken','Egg','Fish','Noodles','Pasta'],
+  snack:     ['Snack','Sweet'],
+};
+const REC_COUNTS = { breakfast:2, lunch:3, dinner:2, snack:1 };
+
+function getRecentlyEaten(days) {
+  const eaten = new Set();
+  const cache = {};
+  const now = new Date();
+  for (let i = 0; i < days; i++) {
+    const d = new Date(now); d.setDate(d.getDate() - i);
+    const mKey = getMonthKey(d);
+    if (!cache[mKey]) cache[mKey] = getMonthLog(d);
+    const day = cache[mKey][getDayKey(d)];
+    if (!day) continue;
+    MEAL_KEYS.forEach(m => (day[m]||[]).forEach(id => eaten.add(id)));
+  }
+  return eaten;
+}
+
+function buildRecs(pref) {
+  const eaten = getRecentlyEaten(14);
+  const recs = {};
+  MEAL_KEYS.forEach(meal => {
+    const pool = RECIPES.filter(r =>
+      REC_CATS[meal].includes(r.category) &&
+      !eaten.has(r.id) &&
+      (pref === 'all' || r.preference === 'both' || r.preference === pref)
+    );
+    recs[meal] = pool.sort(() => Math.random()-0.5).slice(0, REC_COUNTS[meal]);
+  });
+  return recs;
+}
+
+function openRecommendations() {
+  recPref = 'all';
+  lastRecs = buildRecs(recPref);
+  renderRecModal();
+  document.getElementById('rec-overlay').classList.add('open');
+}
+
+function closeRec() {
+  document.getElementById('rec-overlay').classList.remove('open');
+}
+
+function setRecPref(pref) {
+  recPref = pref;
+  lastRecs = buildRecs(recPref);
+  renderRecModal();
+}
+
+function renderRecModal() {
+  const prefHtml = ['all','dharani','shashi'].map(p =>
+    `<button class="chip pref-chip${recPref===p?' active':''}" onclick="setRecPref('${p}')">${p==='all'?'Both':p[0].toUpperCase()+p.slice(1)}</button>`
+  ).join('');
+
+  const sectionsHtml = MEAL_KEYS.map(meal => {
+    const items = lastRecs[meal] || [];
+    const itemsHtml = items.length
+      ? items.map(r => `<div class="rec-item"><span class="rec-item-icon">${ICONS[r.category]||'🍴'}</span>${r.name}</div>`).join('')
+      : `<div class="rec-empty">No suggestions — all ${MEAL_LABELS[meal].split(' ')[1]} items eaten recently</div>`;
+    return `<div class="rec-section"><div class="rec-label">${MEAL_LABELS[meal]}</div>${itemsHtml}</div>`;
+  }).join('');
+
+  document.getElementById('rec-body').innerHTML = `
+    <div class="rec-pref-row">${prefHtml}</div>
+    ${sectionsHtml}
+    <button class="rec-log-btn" onclick="logRecommendations()">Log These for ${formatDiaryDate(diaryDate)}</button>`;
+}
+
+function logRecommendations() {
+  const log = getDayLog(diaryDate);
+  MEAL_KEYS.forEach(meal => {
+    const ids = (lastRecs[meal]||[]).map(r => r.id);
+    log[meal] = [...new Set([...(log[meal]||[]), ...ids])];
+  });
+  saveDayLog(diaryDate, log);
+  closeRec();
+  renderDiary();
+}
 
 loadRecipes();
 </script>
