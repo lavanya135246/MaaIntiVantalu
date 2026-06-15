@@ -1747,6 +1747,14 @@
         "garlic",
         "curry leaves"
       ]
+    },
+    {
+      "id": 127,
+      "name": "Tofu Sandwich",
+      "category": "Tiffin",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": ["tofu", "bread", "onion", "tomato", "green chili", "spices"]
     }
   ]
 }
