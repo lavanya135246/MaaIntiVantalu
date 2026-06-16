@@ -1763,6 +1763,14 @@
       "time": "quick",
       "preference": "both",
       "keyIngredients": ["rice", "water", "salt"]
+    },
+    {
+      "id": 129,
+      "name": "Smoothie",
+      "category": "Other",
+      "time": "quick",
+      "preference": "dharani",
+      "keyIngredients": ["fruit", "milk", "yogurt", "honey"]
     }
   ]
 }
