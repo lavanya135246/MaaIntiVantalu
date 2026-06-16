@@ -1755,6 +1755,14 @@
       "time": "quick",
       "preference": "both",
       "keyIngredients": ["tofu", "bread", "onion", "tomato", "green chili", "spices"]
+    },
+    {
+      "id": 128,
+      "name": "White Rice",
+      "category": "Rice",
+      "time": "quick",
+      "preference": "both",
+      "keyIngredients": ["rice", "water", "salt"]
     }
   ]
 }
