@@ -843,7 +843,7 @@ function setupImageObserver() {
 
 async function loadRecipes() {
   try {
-    const res = await fetch('recipes.json');
+    const res = await fetch('recipes.json', { cache: 'no-cache' });
     const data = await res.json();
     RECIPES = data.recipes;
     document.querySelector('.recipe-count-badge').textContent = RECIPES.length + ' recipes';
